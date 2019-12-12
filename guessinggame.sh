@@ -1,18 +1,17 @@
-echo "Guessing Game"
 echo "How many files are in the current directory ?"
-read guess
+read response
 
 
-function get_file {
-        local number=$(ls -l | wc -l)-1
-        echo $number
+function file_cnt {
+        local cnt=$(ls -l | wc -l)-1
+        echo $cnt
 }
 
-correct=$(get_file)
+correct=$(file_cnt)
 
-while [[ $guess -ne $correct ]]
+while [[ $response -ne $correct ]]
 do
-        if [[ $guess -gt $correct ]]
+        if [[ $response -gt $correct ]]
         then
                 echo "No.. it's too high"
         else
@@ -20,7 +19,8 @@ do
         fi
         echo
         echo "Try again: "
-        read guess
+        read response
 done
 
-echo "You guessed the right number! Great! "
+echo "Great! You guess how many files are in the current directory"
+echo "Correct number is $response"
