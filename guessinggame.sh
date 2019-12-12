@@ -1,4 +1,3 @@
-cat guessinggame.sh
 echo "Guessing Game"
 echo "How many files are in the current directory ?"
 read guess
@@ -15,7 +14,7 @@ while [[ $guess -ne $correct ]]
 do
         if [[ $guess -gt $correct ]]
         then
-                echo "No.. it's too hugh"
+                echo "No.. it's too high"
         else
                 echo "No.. it's to low"
         fi
