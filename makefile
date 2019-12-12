@@ -1,5 +1,4 @@
-echo '# Art Tom UNIX WORKBENCH' > README.md
-echo '## Peer Graded assignment ##' >> README.md
-echo '* This makefile was run at: $(shell date +%Y-%m-%d:%H:%M:%S) *' >> README.md
-echo '* There were $(shell wc -l < guessinggame.sh) lines in guessinggame.sh *' >> README.md
-echo '# Enjoy the guessing Game! #'>>README.md
+echo '# TITLE: Art Tom UNIX WORKBENCH' > README.md
+echo '## Assignment to Week4 ##' >> README.md
+echo '* DATE: This makefile was run at: $(shell date +%Y-%m-%d:%H:%M:%S) *' >> README.md
+echo '* Number of lines of code is  $(shell wc -l < guessinggame.sh)*' >> README.md
