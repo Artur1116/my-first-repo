@@ -1,4 +1,5 @@
 echo "How many files are in the current directory ?"
+echo "Enter your answer"
 read response
 
 
